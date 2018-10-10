@@ -1,0 +1,154 @@
+.container {
+  margin-top: 60px;
+}
+
+.container .sidebar li a {
+  color: #ffffffbf;
+}
+
+.container .sidebar {
+  background: #00000045;
+  padding: 7px 25px;
+}
+
+.container .sidebar li {
+  height: 47px;
+}
+
+.sidebar li button {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+}
+
+.content>div {
+  background: #ffffffd9;
+  width: 100%;
+  height: 500px;
+  padding: 15px;
+}
+
+tbody tr.marked {
+  background: #ff36366b;
+
+}
+
+tbody tr.marked button {
+  color: #e3d620 !important;
+}
+
+.search {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.search .search-input {
+  width: 230px;
+  border-bottom: 2px solid #000;
+}
+.search .search-input::-webkit-input-placeholder{
+  color: #b4b4b4;
+  font-size: 14px;
+  font-family: "Microsoft Yahei";
+}
+
+.search .search-btn {
+  position: relative;
+  top: 5px;
+
+  -webkit-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+
+.search .search-btn:hover {
+  color: #d78d3f;
+}
+
+.user-tmpl .user-info {
+  width: 725px;
+  height: 260px;
+  margin-top: 70px;
+  border: 1px solid #000;
+}
+
+.user-tmpl .user-info .avatar {
+  width: 100px;
+  margin-top: 25px;
+  margin-left: 10px;
+}
+
+.user-tmpl .info-item {
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.user-tmpl .info-item .title {
+  font-weight: 700;
+}
+
+.user-tmpl kbd {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.user-tmpl .operate>div {
+  padding: 15px;
+  padding-bottom: 9px;
+  border-bottom: 2px solid #00000073;
+}
+
+.user-tmpl .operate li {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.user-tmpl .operate li button {
+  background: #fa542e;
+  width: 53px;
+  height: 25px;
+  border-radius: 5px;
+  color: #fffffff0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#note_table button.locked {
+  color: #edb40b;
+}
+
+.invcode-tmpl .addcode-btn kbd {
+  background: #1fb6e3;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.invcode-tmpl .switch-btn {
+  width: 146px;
+  height: 30px;
+  margin: 0px 10px;
+  border-radius: 5px;
+  border-bottom: 2px solid #0000006b;
+  font-size: 16px;
+  font-weight: 300;
+
+  -webkit-transition: background .35s;
+  -o-transition: background .35s;
+  transition: background .35s;
+}
+
+.invcode-tmpl .switch-btn:hover {
+  background: #aeaeae4d;
+}
+
+#invcode_table tbody kbd {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#invcode_table tbody tr.new-add {
+  border-left: 3px solid #0ec0f6eb;
+}

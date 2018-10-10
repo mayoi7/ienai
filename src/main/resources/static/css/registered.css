@@ -1,0 +1,70 @@
+.title {
+  text-align: center;
+  font-size: 37px;
+  color: #fff;
+  margin: 32px auto;
+  margin-top: 123px;
+}
+
+.input-text {
+  width: 432px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #fff;
+}
+
+.getback-signin {
+  margin: 25px auto;
+  width: 300px;
+  padding-left: 23px;
+  padding-right: 23px;
+  text-align: center;
+}
+
+.getback-signin a {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 550;
+  color: #ffffff94;
+}
+
+.getback-signin a:hover {
+  color: #fff;
+  -webkit-transition: color .35s;
+  -o-transition: color .35s;
+  transition: color .35s;
+}
+
+#form1 .sex-radio .male,.female {
+  display: inline-block;
+  margin: 10px 35px;
+  color: #fff;
+}
+
+#form1 .input-lover {
+  position: fixed;
+  z-index: 1050;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  color: #fff;
+  top: 317px;
+}
+
+#form1 .final-signup {
+  outline: none;
+  color: #000;
+  width: 70px;
+  border: 4px solid #ffffff6b;
+  background: #fff;
+  border-radius: 9px;
+  height: 33px;
+  margin-top: 11px;
+  font-size: 16px;
+}
+
+#form1 .input-lover .easy-input {
+  margin-top: 1px;
+  margin-bottom: 28px;
+  text-align: center;
+  width: 123px;
+}

@@ -1,0 +1,158 @@
+body {
+  /* font-family: "Merriweather", Georgia, serif; */
+  /* font-family: soleil, Raleway, sans-serif; */
+  font-family: 'lora';
+  background: #5a565f;
+}
+
+body::-webkit-scrollbar {
+  display:none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+input {
+  outline: none;
+}
+
+.input-text {
+  color: #ffffffc7;
+  background: inherit;
+  border: none;
+  border-bottom: 1.2px solid #fff;
+  padding: 5px;
+  display: block;
+  width: 244px;
+  margin: 31px auto;
+  font-size: 16px;
+}
+
+.input-text::placeholder {
+  color: #ffffff59;
+}
+
+.easy-input {
+  outline: none;
+  border: 0;
+  text-align: center;
+  background: transparent;
+  border-bottom: 2px solid #ffffffd6;
+}
+
+.wrong-input {
+  outline: 0;
+  border: 1px solid #f95d5d !important;
+  box-shadow: 0px 0px 10px 0px #f95d5d;
+}
+
+.easy-btn {
+  width: 112px;
+  height: 35px;
+  border: none;
+  border-radius: 20px;
+  background: #ffffffd6;
+  font-size: 16px;
+  display: block;
+  margin: auto auto;
+  margin-top: 20px;
+}
+
+.avatar-img-sm {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fffffff5;
+}
+
+/*背景变暗*/
+.black-drop {
+    position: fixed;
+    background-color: rgba(0, 0, 0, .67);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+}
+
+/*纯黑背景*/
+.cmpl-black-drop {
+  position: fixed;
+  /* 否则最上面会缺一小段 */
+  top: 0px;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  z-index: 1040;
+}
+
+button {
+  outline: none;
+}
+
+textarea {
+  overflow:hidden;
+  outline: none;
+  background: transparent;
+  border: 0;
+  resize: none;
+}
+
+/* 看不出来的button */
+.div-btn {
+  outline: none;
+  border: 0px;
+  background: transparent;
+}
+
+table th,td {
+  text-align: center;
+}
+
+/* 用户身份以及用户状态的kbd标签 */
+kbd.admin {
+  background: #56d536;
+}
+
+kbd.user {
+  background: #8b8b8b;
+}
+
+kbd.ok {
+  background: #25c9e3;
+}
+
+kbd.warning {
+  background: #d7c129;
+}
+
+kbd.banned {
+  background: #e52222;
+}
+
+/* 邀请码是否可用的kbd */
+.unused kbd {
+  background: #59eb0e;
+}
+
+.used kbd {
+  background: #eb0e0e;
+}

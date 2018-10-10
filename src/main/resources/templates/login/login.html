@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>IENAI</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/login.css" />
+</head>
+<body>
+  <div id="app">
+    <div class="title" style="margin: 50px auto; text-align: center; width: 620px; display: none;">
+      <span id="website_name">
+        IENAI
+      </span>
+    </div>
+    <div class="welcome" id="welcome">
+      <span id="welcome_title1" class="wlc-title"></span><div></div>
+      <span id="welcome_title2" class="wlc-title"></span>
+    </div>
+    <div class="login" style="display: none;">
+      <form action="login/login" method="post" id="login_form" />
+        <input type="text" class="input-text" name="username" placeholder="用户名" autocomplete="off" />
+        <input type="password" class="input-text" name="password" placeholder="密码" autocomplete="off" style="margin-top: 37px;" />
+        <label for="rm" style="display: block;margin-top: 22px;text-align: center;position: relative;right: 77px;">
+          <div class="checkbox-span inactive" onclick="toggleActive()"></div>
+          <span style="color: #eae8e8;position: relative;  bottom: 5px;left: 4px;">请你记住我</span>
+        </label>
+        <input type="checkbox" name="rememberMe" id="rm" style="display: none;" />
+        <button id="login_btn" type="button" class="login-btn easy-btn">登陆</button>
+      </form>
+      <div class="extra-service">
+        <a href="#">忘记密码</a>
+        <a th:href="goSignup" style="float: right;">注册账号</a>
+      </div>
+    </div>
+  </div>
+  <!-- <embed id="player" class="hidden" src="/music/Rain.mp3"
+        autostart="true" loop="false" width="0" height="0"> -->
+</body>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/vue.js"></script>
+<script type="text/javascript" src="/js/vue-router.js"></script>
+<script type="text/javascript">
+var index = 0;
+
+let rmFlag = false;
+
+$(function() {
+  //changeAndPlayMusic('Rain.mp3');
+  welcome();
+  
+  $('#login_btn').click(function(event) {
+	  $('#login_form').submit();
+  });
+});
+
+function changeAndPlayMusic(musicName, format) {
+  addr = "/music/";
+  $("#player").attr('src', addr + musicName);
+  $("#player").removeClass('hidden');
+}
+
+function welcome() {
+  showTitleAction(true, 0);
+}
+
+function showOther() {
+  $("#welcome").fadeOut(700);
+  $(".title").fadeIn(2000);
+  $(".login").fadeIn(2000);
+}
+
+/* 逐字显示欢迎标题 */
+function showTitleAction(flag, i) {
+  let t1 = "あなたが何も言わないなら、";
+  let t2 = "私は何も知らない";
+
+  index = i+1;
+
+  if(flag == true) {
+    if(i >= t1.length) {  // 超出长度换下个句子
+      flag = false;
+      i = 0;
+      index = 1;
+    } else {
+      $("#welcome_title1").append(t1[i]);
+      setTimeout("showTitleAction(true, index)", 190);
+    }
+  }
+
+  if(flag == false) {  // 不使用else的原因是，上个if判断失败会变换flag的标识
+    if(i == t2.length) {
+      setTimeout("showOther()", 1100);
+    } else if (i > t2.length);  // 空语句，什么都不做
+    else {
+      $("#welcome_title2").append(t2[i]);
+      setTimeout("showTitleAction(false, index)", 190);
+    }
+  }
+}
+
+function toggleActive() {
+  if(false == rmFlag) {
+    rmFlag = true;
+    $('.checkbox-span').addClass('active');
+  } else {
+    rmFlag = false;
+    $('.checkbox-span').removeClass('active');
+  }
+}
+
+</script>
+</html>

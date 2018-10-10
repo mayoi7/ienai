@@ -1,0 +1,385 @@
+2018-10-09 17:06:34.996  INFO 5992 --- [restartedMain] com.ienai.IenaiApplication               : Starting IenaiApplication on LAPTOP-3GSVDU1G with PID 5992 (started by 刘昊楠 in H:\Spring Workspace\ienai)
+2018-10-09 17:06:34.996  INFO 5992 --- [restartedMain] com.ienai.IenaiApplication               : No active profile set, falling back to default profiles: default
+2018-10-09 17:06:34.998  INFO 5992 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@40e99758: startup date [Tue Oct 09 17:06:34 GMT+08:00 2018]; root of context hierarchy
+2018-10-09 17:06:35.417  INFO 5992 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-10-09 17:06:35.418  INFO 5992 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-09 17:06:35.418  INFO 5992 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-09 17:06:35.473  INFO 5992 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-09 17:06:35.474  INFO 5992 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 476 ms
+2018-10-09 17:06:35.507  INFO 5992 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-10-09 17:06:35.508  INFO 5992 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 17:06:35.508  INFO 5992 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 17:06:35.508  INFO 5992 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 17:06:35.508  INFO 5992 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 17:06:35.715  INFO 5992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@40e99758: startup date [Tue Oct 09 17:06:34 GMT+08:00 2018]; root of context hierarchy
+2018-10-09 17:06:35.722  INFO 5992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goSignup]}" onto public java.lang.String com.ienai.controller.BaseController.goSignup()
+2018-10-09 17:06:35.722  INFO 5992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.ienai.controller.BaseController.goIndexPage()
+2018-10-09 17:06:35.723  INFO 5992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goLogin]}" onto public java.lang.String com.ienai.controller.BaseController.goLogin()
+2018-10-09 17:06:35.723  INFO 5992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goFileLossError]}" onto public java.lang.String com.ienai.controller.BaseController.goFileLossError()
+2018-10-09 17:06:35.725  INFO 5992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login/login]}" onto public java.lang.String com.ienai.controller.LoginController.login(java.lang.String,java.lang.String) throws java.lang.Exception
+2018-10-09 17:06:35.725  INFO 5992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login/insertUserInfo],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.ienai.controller.LoginController.insertUserInfo(com.ienai.po.User) throws java.lang.Exception
+2018-10-09 17:06:35.725  INFO 5992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login/checkInvcode],methods=[GET]}" onto public boolean com.ienai.controller.LoginController.checkInvcode(java.lang.String) throws java.lang.Exception
+2018-10-09 17:06:35.726  INFO 5992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login/checkUsernameAvailable],methods=[GET]}" onto public boolean com.ienai.controller.LoginController.checkUsernameAvailable(java.lang.String) throws java.lang.Exception
+2018-10-09 17:06:35.727  INFO 5992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/likeNote],methods=[POST]}" onto public boolean com.ienai.controller.NoteController.likeNote(java.lang.Integer,boolean) throws java.lang.Exception
+2018-10-09 17:06:35.728  INFO 5992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/careNote],methods=[POST]}" onto public boolean com.ienai.controller.NoteController.careNote(java.lang.Integer,boolean) throws java.lang.Exception
+2018-10-09 17:06:35.728  INFO 5992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnPageInLikeOrder],methods=[GET]}" onto public java.util.List<com.ienai.dto.GenNote> com.ienai.controller.NoteController.returnPageInLikeOrder(java.lang.Integer) throws java.lang.Exception
+2018-10-09 17:06:35.728  INFO 5992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnPageInTimeOrder],methods=[GET]}" onto public java.util.List<com.ienai.dto.GenNote> com.ienai.controller.NoteController.returnPageInTimeOrder(java.lang.Integer) throws java.lang.Exception
+2018-10-09 17:06:35.728  INFO 5992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnPageSendMeInTimeOrder],methods=[GET]}" onto public java.util.List<com.ienai.dto.GenNote> com.ienai.controller.NoteController.returnPageSendMeInTimeOrder(java.lang.Integer) throws java.lang.Exception
+2018-10-09 17:06:35.729  INFO 5992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnUserLikeAndInterest],methods=[POST]}" onto public java.util.List<com.ienai.dto.NoteMetaRecord> com.ienai.controller.NoteController.returnUserLikeAndInterest(int[]) throws java.lang.Exception
+2018-10-09 17:06:35.729  INFO 5992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnPageFromMeInTimeOrder],methods=[GET]}" onto public java.util.List<com.ienai.dto.GenNote> com.ienai.controller.NoteController.returnPageFromMeInTimeOrder(java.lang.Integer) throws java.lang.Exception
+2018-10-09 17:06:35.729  INFO 5992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnUserAndNote],methods=[GET]}" onto public com.ienai.dto.IndexInfo com.ienai.controller.NoteController.returnUserAndNote() throws java.lang.Exception
+2018-10-09 17:06:35.729  INFO 5992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/hello]}" onto public java.lang.String com.ienai.controller.TestController.index()
+2018-10-09 17:06:35.730  INFO 5992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-09 17:06:35.731  INFO 5992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-09 17:06:35.737  INFO 5992 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-09 17:06:35.737  INFO 5992 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-09 17:06:35.748  INFO 5992 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-09 17:06:35.846  INFO 5992 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-10-09 17:06:35.883  INFO 5992 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-09 17:06:35.971  INFO 5992 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-10-09 17:06:35.973  INFO 5992 --- [restartedMain] com.ienai.IenaiApplication               : Started IenaiApplication in 1.06 seconds (JVM running for 1540.002)
+2018-10-09 17:06:39.505  INFO 5992 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-10-09 17:06:39.505  INFO 5992 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@40e99758: startup date [Tue Oct 09 17:06:34 GMT+08:00 2018]; root of context hierarchy
+2018-10-09 17:06:39.517  INFO 5992 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-10-09 17:06:52.095  INFO 16004 --- [restartedMain] com.ienai.IenaiApplication               : Starting IenaiApplication on LAPTOP-3GSVDU1G with PID 16004 (started by 刘昊楠 in H:\Spring Workspace\ienai)
+2018-10-09 17:06:52.096  INFO 16004 --- [restartedMain] com.ienai.IenaiApplication               : No active profile set, falling back to default profiles: default
+2018-10-09 17:06:52.260  INFO 16004 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@159807c8: startup date [Tue Oct 09 17:06:52 GMT+08:00 2018]; root of context hierarchy
+2018-10-09 17:06:53.503  INFO 16004 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-10-09 17:06:53.524  INFO 16004 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-09 17:06:53.524  INFO 16004 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-09 17:06:53.682  INFO 16004 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-09 17:06:53.683  INFO 16004 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1426 ms
+2018-10-09 17:06:53.844  INFO 16004 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-10-09 17:06:53.847  INFO 16004 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 17:06:53.848  INFO 16004 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 17:06:53.848  INFO 16004 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 17:06:53.848  INFO 16004 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 17:06:54.526  INFO 16004 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@159807c8: startup date [Tue Oct 09 17:06:52 GMT+08:00 2018]; root of context hierarchy
+2018-10-09 17:06:54.568  INFO 16004 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goFileLossError]}" onto public java.lang.String com.ienai.controller.BaseController.goFileLossError()
+2018-10-09 17:06:54.569  INFO 16004 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goLogin]}" onto public java.lang.String com.ienai.controller.BaseController.goLogin()
+2018-10-09 17:06:54.570  INFO 16004 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goSignup]}" onto public java.lang.String com.ienai.controller.BaseController.goSignup()
+2018-10-09 17:06:54.570  INFO 16004 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.ienai.controller.BaseController.goIndexPage()
+2018-10-09 17:06:54.575  INFO 16004 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login/checkUsernameAvailable],methods=[GET]}" onto public boolean com.ienai.controller.LoginController.checkUsernameAvailable(java.lang.String) throws java.lang.Exception
+2018-10-09 17:06:54.575  INFO 16004 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login/login]}" onto public java.lang.String com.ienai.controller.LoginController.login(java.lang.String,java.lang.String) throws java.lang.Exception
+2018-10-09 17:06:54.575  INFO 16004 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login/checkInvcode],methods=[GET]}" onto public boolean com.ienai.controller.LoginController.checkInvcode(java.lang.String) throws java.lang.Exception
+2018-10-09 17:06:54.576  INFO 16004 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login/insertUserInfo],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.ienai.controller.LoginController.insertUserInfo(com.ienai.po.User) throws java.lang.Exception
+2018-10-09 17:06:54.578  INFO 16004 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnUserAndNote],methods=[GET]}" onto public com.ienai.dto.IndexInfo com.ienai.controller.NoteController.returnUserAndNote() throws java.lang.Exception
+2018-10-09 17:06:54.579  INFO 16004 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnUserLikeAndInterest],methods=[POST]}" onto public java.util.List<com.ienai.dto.NoteMetaRecord> com.ienai.controller.NoteController.returnUserLikeAndInterest(int[]) throws java.lang.Exception
+2018-10-09 17:06:54.580  INFO 16004 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnPageInTimeOrder],methods=[GET]}" onto public java.util.List<com.ienai.dto.GenNote> com.ienai.controller.NoteController.returnPageInTimeOrder(java.lang.Integer) throws java.lang.Exception
+2018-10-09 17:06:54.580  INFO 16004 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnPageSendMeInTimeOrder],methods=[GET]}" onto public java.util.List<com.ienai.dto.GenNote> com.ienai.controller.NoteController.returnPageSendMeInTimeOrder(java.lang.Integer) throws java.lang.Exception
+2018-10-09 17:06:54.581  INFO 16004 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnPageFromMeInTimeOrder],methods=[GET]}" onto public java.util.List<com.ienai.dto.GenNote> com.ienai.controller.NoteController.returnPageFromMeInTimeOrder(java.lang.Integer) throws java.lang.Exception
+2018-10-09 17:06:54.581  INFO 16004 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnPageInLikeOrder],methods=[GET]}" onto public java.util.List<com.ienai.dto.GenNote> com.ienai.controller.NoteController.returnPageInLikeOrder(java.lang.Integer) throws java.lang.Exception
+2018-10-09 17:06:54.581  INFO 16004 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/likeNote],methods=[POST]}" onto public boolean com.ienai.controller.NoteController.likeNote(java.lang.Integer,boolean) throws java.lang.Exception
+2018-10-09 17:06:54.582  INFO 16004 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/careNote],methods=[POST]}" onto public boolean com.ienai.controller.NoteController.careNote(java.lang.Integer,boolean) throws java.lang.Exception
+2018-10-09 17:06:54.583  INFO 16004 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/hello]}" onto public java.lang.String com.ienai.controller.TestController.index()
+2018-10-09 17:06:54.585  INFO 16004 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-09 17:06:54.586  INFO 16004 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-09 17:06:54.613  INFO 16004 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-09 17:06:54.613  INFO 16004 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-09 17:06:54.648  INFO 16004 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-09 17:06:55.201  INFO 16004 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-10-09 17:06:55.247  INFO 16004 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-09 17:06:55.361  INFO 16004 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-10-09 17:06:55.366  INFO 16004 --- [restartedMain] com.ienai.IenaiApplication               : Started IenaiApplication in 3.473 seconds (JVM running for 4.578)
+2018-10-09 17:07:06.272  INFO 16004 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-09 17:07:06.272  INFO 16004 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-09 17:07:06.300  INFO 16004 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2018-10-09 17:07:06.315  INFO 16004 --- [http-nio-8080-exec-1] com.ienai.interceptor.LoginInterceptor   : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：无
+时间：2018-10-09 17:07:06
+行为：请求访问goIndexPage方法被拦截，将返回主页
+-------------------------------
+2018-10-09 17:07:06.333  INFO 16004 --- [http-nio-8080-exec-2] com.ienai.controller.BaseController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：无
+时间：2018-10-09 17:07:06
+行为：访问登陆页面
+-------------------------------
+2018-10-09 17:07:16.533  INFO 16004 --- [http-nio-8080-exec-9] com.ienai.controller.LoginController     : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-09 17:07:16
+行为：普通用户授权通过，访问主页
+-------------------------------
+2018-10-09 17:07:16.545  INFO 16004 --- [http-nio-8080-exec-10] com.ienai.interceptor.LoginInterceptor   : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-09 17:07:16
+行为：将要访问主页
+-------------------------------
+2018-10-09 17:07:16.665  INFO 16004 --- [http-nio-8080-exec-7] com.ienai.interceptor.LoginInterceptor   : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-09 17:07:16
+行为：将要访问主页
+-------------------------------
+2018-10-09 17:07:16.666  INFO 16004 --- [http-nio-8080-exec-7] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-09 17:07:16
+行为：请求查询主页所需的user和note信息
+-------------------------------
+2018-10-09 17:07:16.704  INFO 16004 --- [http-nio-8080-exec-7] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-09 17:07:16
+行为：查询完毕，开始做note的修正
+-------------------------------
+2018-10-09 17:07:16.733  INFO 16004 --- [http-nio-8080-exec-7] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-09 17:07:16
+行为：note的修正完毕
+-------------------------------
+2018-10-09 17:07:16.733  INFO 16004 --- [http-nio-8080-exec-7] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-09 17:07:16
+行为：即将查询并设置id为3用户的信息
+-------------------------------
+2018-10-09 17:07:16.737  INFO 16004 --- [http-nio-8080-exec-7] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-09 17:07:16
+行为：全部信息设置完毕，即将返回
+-------------------------------
+2018-10-09 17:07:16.798  INFO 16004 --- [http-nio-8080-exec-8] com.ienai.interceptor.LoginInterceptor   : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-09 17:07:16
+行为：将要访问主页
+-------------------------------
+2018-10-09 17:07:16.800  INFO 16004 --- [http-nio-8080-exec-8] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-09 17:07:16
+行为：将要查询用户对一系列note的点赞和关心数据
+-------------------------------
+2018-10-09 17:07:16.831  INFO 16004 --- [http-nio-8080-exec-8] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-09 17:07:16
+行为：查询用户对一系列note的点赞和关心数据完毕
+-------------------------------
+2018-10-09 17:09:05.202  INFO 16004 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-10-09 17:09:05.202  INFO 16004 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@159807c8: startup date [Tue Oct 09 17:06:52 GMT+08:00 2018]; root of context hierarchy
+2018-10-09 17:09:05.205  INFO 16004 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-10-09 21:20:03.306  INFO 1880 --- [restartedMain] com.ienai.IenaiApplication               : Starting IenaiApplication on LAPTOP-3GSVDU1G with PID 1880 (started by 刘昊楠 in H:\Spring Workspace\ienai)
+2018-10-09 21:20:03.306  INFO 1880 --- [restartedMain] com.ienai.IenaiApplication               : No active profile set, falling back to default profiles: default
+2018-10-09 21:20:03.656  INFO 1880 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78dc36f3: startup date [Tue Oct 09 21:20:03 GMT+08:00 2018]; root of context hierarchy
+2018-10-09 21:20:03.664  INFO 11124 --- [restartedMain] com.ienai.IenaiApplication               : Starting IenaiApplication on LAPTOP-3GSVDU1G with PID 11124 (started by 刘昊楠 in H:\Spring Workspace\ienai)
+2018-10-09 21:20:03.665  INFO 11124 --- [restartedMain] com.ienai.IenaiApplication               : No active profile set, falling back to default profiles: default
+2018-10-09 21:20:03.934  INFO 11124 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50c5c52a: startup date [Tue Oct 09 21:20:03 GMT+08:00 2018]; root of context hierarchy
+2018-10-09 21:20:06.040  INFO 11124 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-10-09 21:20:06.100  INFO 11124 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-09 21:20:06.100  INFO 11124 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-09 21:20:06.122  INFO 1880 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-10-09 21:20:06.148  INFO 1880 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-09 21:20:06.149  INFO 1880 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-09 21:20:06.331  INFO 11124 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-09 21:20:06.331  INFO 11124 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2401 ms
+2018-10-09 21:20:06.361  INFO 1880 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-09 21:20:06.362  INFO 1880 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2709 ms
+2018-10-09 21:20:06.512  INFO 11124 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-10-09 21:20:06.515  INFO 11124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 21:20:06.516  INFO 11124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 21:20:06.516  INFO 11124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 21:20:06.517  INFO 11124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 21:20:06.560  INFO 1880 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-10-09 21:20:06.564  INFO 1880 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 21:20:06.564  INFO 1880 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 21:20:06.565  INFO 1880 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 21:20:06.565  INFO 1880 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 21:20:07.269  INFO 11124 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50c5c52a: startup date [Tue Oct 09 21:20:03 GMT+08:00 2018]; root of context hierarchy
+2018-10-09 21:20:07.297  INFO 1880 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78dc36f3: startup date [Tue Oct 09 21:20:03 GMT+08:00 2018]; root of context hierarchy
+2018-10-09 21:20:07.310  INFO 11124 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goLogin]}" onto public java.lang.String com.ienai.controller.BaseController.goLogin()
+2018-10-09 21:20:07.311  INFO 11124 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goSignup]}" onto public java.lang.String com.ienai.controller.BaseController.goSignup()
+2018-10-09 21:20:07.311  INFO 11124 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goFileLossError]}" onto public java.lang.String com.ienai.controller.BaseController.goFileLossError()
+2018-10-09 21:20:07.312  INFO 11124 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.ienai.controller.BaseController.goIndexPage()
+2018-10-09 21:20:07.316  INFO 11124 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login/checkUsernameAvailable],methods=[GET]}" onto public boolean com.ienai.controller.LoginController.checkUsernameAvailable(java.lang.String) throws java.lang.Exception
+2018-10-09 21:20:07.316  INFO 11124 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login/checkInvcode],methods=[GET]}" onto public boolean com.ienai.controller.LoginController.checkInvcode(java.lang.String) throws java.lang.Exception
+2018-10-09 21:20:07.317  INFO 11124 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login/login]}" onto public java.lang.String com.ienai.controller.LoginController.login(java.lang.String,java.lang.String) throws java.lang.Exception
+2018-10-09 21:20:07.317  INFO 11124 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login/insertUserInfo],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.ienai.controller.LoginController.insertUserInfo(com.ienai.po.User) throws java.lang.Exception
+2018-10-09 21:20:07.319  INFO 11124 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnPageFromMeInTimeOrder],methods=[GET]}" onto public java.util.List<com.ienai.dto.GenNote> com.ienai.controller.NoteController.returnPageFromMeInTimeOrder(java.lang.Integer) throws java.lang.Exception
+2018-10-09 21:20:07.319  INFO 11124 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnPageInTimeOrder],methods=[GET]}" onto public java.util.List<com.ienai.dto.GenNote> com.ienai.controller.NoteController.returnPageInTimeOrder(java.lang.Integer) throws java.lang.Exception
+2018-10-09 21:20:07.319  INFO 11124 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnPageInLikeOrder],methods=[GET]}" onto public java.util.List<com.ienai.dto.GenNote> com.ienai.controller.NoteController.returnPageInLikeOrder(java.lang.Integer) throws java.lang.Exception
+2018-10-09 21:20:07.320  INFO 11124 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnPageSendMeInTimeOrder],methods=[GET]}" onto public java.util.List<com.ienai.dto.GenNote> com.ienai.controller.NoteController.returnPageSendMeInTimeOrder(java.lang.Integer) throws java.lang.Exception
+2018-10-09 21:20:07.320  INFO 11124 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnUserAndNote],methods=[GET]}" onto public com.ienai.dto.IndexInfo com.ienai.controller.NoteController.returnUserAndNote() throws java.lang.Exception
+2018-10-09 21:20:07.320  INFO 11124 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnUserLikeAndInterest],methods=[POST]}" onto public java.util.List<com.ienai.dto.NoteMetaRecord> com.ienai.controller.NoteController.returnUserLikeAndInterest(int[]) throws java.lang.Exception
+2018-10-09 21:20:07.320  INFO 11124 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/careNote],methods=[POST]}" onto public boolean com.ienai.controller.NoteController.careNote(java.lang.Integer,boolean) throws java.lang.Exception
+2018-10-09 21:20:07.321  INFO 11124 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/likeNote],methods=[POST]}" onto public boolean com.ienai.controller.NoteController.likeNote(java.lang.Integer,boolean) throws java.lang.Exception
+2018-10-09 21:20:07.322  INFO 11124 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/hello]}" onto public java.lang.String com.ienai.controller.TestController.index()
+2018-10-09 21:20:07.324  INFO 11124 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-09 21:20:07.324  INFO 11124 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-09 21:20:07.342  INFO 1880 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goSignup]}" onto public java.lang.String com.ienai.controller.BaseController.goSignup()
+2018-10-09 21:20:07.343  INFO 1880 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goLogin]}" onto public java.lang.String com.ienai.controller.BaseController.goLogin()
+2018-10-09 21:20:07.344  INFO 1880 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.ienai.controller.BaseController.goIndexPage()
+2018-10-09 21:20:07.344  INFO 1880 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goFileLossError]}" onto public java.lang.String com.ienai.controller.BaseController.goFileLossError()
+2018-10-09 21:20:07.348  INFO 1880 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login/checkUsernameAvailable],methods=[GET]}" onto public boolean com.ienai.controller.LoginController.checkUsernameAvailable(java.lang.String) throws java.lang.Exception
+2018-10-09 21:20:07.349  INFO 1880 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login/insertUserInfo],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.ienai.controller.LoginController.insertUserInfo(com.ienai.po.User) throws java.lang.Exception
+2018-10-09 21:20:07.349  INFO 1880 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login/checkInvcode],methods=[GET]}" onto public boolean com.ienai.controller.LoginController.checkInvcode(java.lang.String) throws java.lang.Exception
+2018-10-09 21:20:07.349  INFO 1880 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login/login]}" onto public java.lang.String com.ienai.controller.LoginController.login(java.lang.String,java.lang.String) throws java.lang.Exception
+2018-10-09 21:20:07.351  INFO 1880 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnUserAndNote],methods=[GET]}" onto public com.ienai.dto.IndexInfo com.ienai.controller.NoteController.returnUserAndNote() throws java.lang.Exception
+2018-10-09 21:20:07.352  INFO 1880 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/likeNote],methods=[POST]}" onto public boolean com.ienai.controller.NoteController.likeNote(java.lang.Integer,boolean) throws java.lang.Exception
+2018-10-09 21:20:07.352  INFO 1880 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/careNote],methods=[POST]}" onto public boolean com.ienai.controller.NoteController.careNote(java.lang.Integer,boolean) throws java.lang.Exception
+2018-10-09 21:20:07.352  INFO 1880 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnPageFromMeInTimeOrder],methods=[GET]}" onto public java.util.List<com.ienai.dto.GenNote> com.ienai.controller.NoteController.returnPageFromMeInTimeOrder(java.lang.Integer) throws java.lang.Exception
+2018-10-09 21:20:07.353  INFO 1880 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnPageInTimeOrder],methods=[GET]}" onto public java.util.List<com.ienai.dto.GenNote> com.ienai.controller.NoteController.returnPageInTimeOrder(java.lang.Integer) throws java.lang.Exception
+2018-10-09 21:20:07.353  INFO 1880 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnPageInLikeOrder],methods=[GET]}" onto public java.util.List<com.ienai.dto.GenNote> com.ienai.controller.NoteController.returnPageInLikeOrder(java.lang.Integer) throws java.lang.Exception
+2018-10-09 21:20:07.353  INFO 1880 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnPageSendMeInTimeOrder],methods=[GET]}" onto public java.util.List<com.ienai.dto.GenNote> com.ienai.controller.NoteController.returnPageSendMeInTimeOrder(java.lang.Integer) throws java.lang.Exception
+2018-10-09 21:20:07.353  INFO 1880 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnUserLikeAndInterest],methods=[POST]}" onto public java.util.List<com.ienai.dto.NoteMetaRecord> com.ienai.controller.NoteController.returnUserLikeAndInterest(int[]) throws java.lang.Exception
+2018-10-09 21:20:07.354  INFO 1880 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/hello]}" onto public java.lang.String com.ienai.controller.TestController.index()
+2018-10-09 21:20:07.354  INFO 11124 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-09 21:20:07.354  INFO 11124 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-09 21:20:07.355  INFO 1880 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-09 21:20:07.356  INFO 1880 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-09 21:20:07.388  INFO 1880 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-09 21:20:07.388  INFO 1880 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-09 21:20:07.390  INFO 11124 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-09 21:20:07.427  INFO 1880 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-09 21:20:08.123  INFO 11124 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-10-09 21:20:08.132  WARN 1880 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2018-10-09 21:20:08.176  INFO 11124 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-09 21:20:08.178  INFO 1880 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-09 21:20:08.214 ERROR 1880 --- [restartedMain] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:265) [spring-boot-1.5.16.RELEASE.jar:1.5.16.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:208) [spring-boot-1.5.16.RELEASE.jar:1.5.16.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.16.RELEASE.jar:1.5.16.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.16.RELEASE.jar:1.5.16.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.19.RELEASE.jar:4.3.19.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.16.RELEASE.jar:1.5.16.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.16.RELEASE.jar:1.5.16.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.16.RELEASE.jar:1.5.16.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.16.RELEASE.jar:1.5.16.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.16.RELEASE.jar:1.5.16.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.16.RELEASE.jar:1.5.16.RELEASE]
+	at com.ienai.IenaiApplication.main(IenaiApplication.java:12) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_121]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.16.RELEASE.jar:1.5.16.RELEASE]
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_121]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[na:1.8.0_121]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[na:1.8.0_121]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) ~[na:1.8.0_121]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:219) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1151) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	... 19 common frames omitted
+
+2018-10-09 21:20:08.218  INFO 1880 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-10-09 21:20:08.233  INFO 1880 --- [restartedMain] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-10-09 21:20:08.238 ERROR 1880 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2018-10-09 21:20:08.240  INFO 1880 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78dc36f3: startup date [Tue Oct 09 21:20:03 GMT+08:00 2018]; root of context hierarchy
+2018-10-09 21:20:08.243  INFO 1880 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-10-09 21:20:08.548  INFO 11124 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-10-09 21:20:08.553  INFO 11124 --- [restartedMain] com.ienai.IenaiApplication               : Started IenaiApplication in 5.409 seconds (JVM running for 6.885)
+2018-10-09 21:20:25.991  INFO 11124 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-09 21:20:25.992  INFO 11124 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-09 21:20:26.021  INFO 11124 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2018-10-09 21:20:26.062  INFO 11124 --- [http-nio-8080-exec-2] com.ienai.controller.BaseController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：无
+时间：2018-10-09 21:20:26
+行为：访问登陆页面
+-------------------------------
+2018-10-09 21:20:33.957  INFO 11124 --- [http-nio-8080-exec-9] com.ienai.controller.LoginController     : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-09 21:20:33
+行为：普通用户授权通过，访问主页
+-------------------------------
+2018-10-09 21:20:33.969  INFO 11124 --- [http-nio-8080-exec-10] com.ienai.interceptor.LoginInterceptor   : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-09 21:20:33
+行为：将要访问主页
+-------------------------------
+2018-10-09 21:20:34.206  INFO 11124 --- [http-nio-8080-exec-8] com.ienai.interceptor.LoginInterceptor   : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-09 21:20:34
+行为：将要访问主页
+-------------------------------
+2018-10-09 21:20:34.207  INFO 11124 --- [http-nio-8080-exec-8] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-09 21:20:34
+行为：请求查询主页所需的user和note信息
+-------------------------------
+2018-10-09 21:20:34.276  INFO 11124 --- [http-nio-8080-exec-8] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-09 21:20:34
+行为：查询完毕，开始做note的修正
+-------------------------------
+2018-10-09 21:20:34.306  INFO 11124 --- [http-nio-8080-exec-8] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-09 21:20:34
+行为：即将查询并设置id为3用户的信息
+-------------------------------
+2018-10-09 21:20:34.359  INFO 11124 --- [http-nio-8080-exec-9] com.ienai.interceptor.LoginInterceptor   : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-09 21:20:34
+行为：将要访问主页
+-------------------------------
+2018-10-09 21:20:34.361  INFO 11124 --- [http-nio-8080-exec-9] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-09 21:20:34
+行为：将要查询用户对一系列note的点赞和关心数据
+-------------------------------
+2018-10-09 21:21:05.159  INFO 11124 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-10-09 21:21:05.160  INFO 11124 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50c5c52a: startup date [Tue Oct 09 21:20:03 GMT+08:00 2018]; root of context hierarchy
+2018-10-09 21:21:05.164  INFO 11124 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown

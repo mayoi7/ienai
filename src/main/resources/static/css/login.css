@@ -1,0 +1,63 @@
+#website_name {
+  color: #ffffffcf;
+  font-size: 140px;
+}
+
+.welcome {
+  position: fixed;
+  text-align: center;
+  top: 300px;
+  width: 100%;
+}
+
+.welcome span {
+  color: #fff;
+  font-size: 58px;
+}
+
+#player {
+
+}
+
+.login {
+  position: relative;
+  top: 60px;
+}
+
+.checkbox-span {
+  display: inline-block;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  margin: 2px;
+}
+
+.checkbox-span.inactive {
+  background: #ffffff59;;
+}
+
+.checkbox-span.active {
+  border: 2px solid #c5faff;
+}
+
+.extra-service {
+  margin: 25px auto;
+  width: 300px;
+  padding-left: 23px;
+  padding-right: 23px;
+}
+
+.extra-service a {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 550;
+  color: #ffffff94;
+}
+
+.extra-service a:hover {
+  color: #fff;
+  -webkit-transition: color .35s;
+  -o-transition: color .35s;
+  transition: color .35s;
+}

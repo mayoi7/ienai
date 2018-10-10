@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>管理中心</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/admin.css" />
+</head>
+<body>
+  <div id="app">
+    <div class="container">
+      <ul class="sidebar list-unstyled col-md-2">
+        <li><button class="div-btn"><router-link to="/">基础信息</router-link></button></li>
+        <li><button class="div-btn"><router-link to="/website">网站管理</router-link></button></li>
+        <li><button class="div-btn"><router-link to="/user">用户管理</router-link></button></li>
+        <li><button class="div-btn"><router-link to="/note">便条管理</router-link></button></li>
+        <li><button class="div-btn"><router-link to="/invcode">邀请码管理</router-link></button></li>
+        <li style="border-top: 1px solid #fff"><button class="div-btn"><a href="#">返回主页</a></button></li>
+      </ul>
+      <div class="content col-md-10">
+        <router-view></router-view>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/vue.js"></script>
+<script type="text/javascript" src="/js/vue-router.js"></script>
+<script type="text/javascript" src="/js/admin.js"></script>
+<script type="text/javascript">
+  $(function() {
+    /* invcode部分 */
+
+    // 点击‘显示全部’按钮
+    $('#sa').bind('click', function(event) {
+      /* Act on the event */
+      $('#invcode_table .used').show();
+    });
+
+    // 单击‘仅显示可用’按钮
+    $('#su').bind('click', function(event) {
+      /* Act on the event */
+      $('#invcode_table .used').hide();
+    });
+  });
+</script>
+</html>
