@@ -43,14 +43,6 @@ public class BaseController {
 		return "login/registered";
 	}
 	
-//	@RequestMapping("/goAdmin")
-//	public String goAdmin() {
-//		String ip = HttpUtil.getIpAddrByRequest(request);
-//		logger.info(CustomStringUtil.returnInfoLog(ip, null, "访问网站管理页面"));
-//		
-//		return "admin/admin";
-//	}
-	
 	@RequestMapping("/index")
 	public String goIndexPage() {
 		
