@@ -383,3 +383,357 @@ ip：0:0:0:0:0:0:0:1
 2018-10-09 21:21:05.159  INFO 11124 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
 2018-10-09 21:21:05.160  INFO 11124 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50c5c52a: startup date [Tue Oct 09 21:20:03 GMT+08:00 2018]; root of context hierarchy
 2018-10-09 21:21:05.164  INFO 11124 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-10-10 16:00:13.251  INFO 7472 --- [restartedMain] com.ienai.IenaiApplication               : Starting IenaiApplication on LAPTOP-3GSVDU1G with PID 7472 (H:\project\ienai\ienai\target\classes started by 刘昊楠 in H:\project\ienai\ienai)
+2018-10-10 16:00:13.253  INFO 7472 --- [restartedMain] com.ienai.IenaiApplication               : No active profile set, falling back to default profiles: default
+2018-10-10 16:00:13.521  INFO 7472 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e688f80: startup date [Wed Oct 10 16:00:13 GMT+08:00 2018]; root of context hierarchy
+2018-10-10 16:00:14.831  INFO 7472 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-10-10 16:00:14.851  INFO 7472 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-10 16:00:14.851  INFO 7472 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-10 16:00:15.019  INFO 7472 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-10 16:00:15.019  INFO 7472 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1501 ms
+2018-10-10 16:00:15.179  INFO 7472 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-10-10 16:00:15.183  INFO 7472 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-10 16:00:15.184  INFO 7472 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-10 16:00:15.184  INFO 7472 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-10 16:00:15.184  INFO 7472 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-10 16:00:15.829  INFO 7472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e688f80: startup date [Wed Oct 10 16:00:13 GMT+08:00 2018]; root of context hierarchy
+2018-10-10 16:00:15.870  INFO 7472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goLogin]}" onto public java.lang.String com.ienai.controller.BaseController.goLogin()
+2018-10-10 16:00:15.871  INFO 7472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goSignup]}" onto public java.lang.String com.ienai.controller.BaseController.goSignup()
+2018-10-10 16:00:15.871  INFO 7472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goFileLossError]}" onto public java.lang.String com.ienai.controller.BaseController.goFileLossError()
+2018-10-10 16:00:15.871  INFO 7472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.ienai.controller.BaseController.goIndexPage()
+2018-10-10 16:00:15.875  INFO 7472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login/checkUsernameAvailable],methods=[GET]}" onto public boolean com.ienai.controller.LoginController.checkUsernameAvailable(java.lang.String) throws java.lang.Exception
+2018-10-10 16:00:15.876  INFO 7472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login/checkInvcode],methods=[GET]}" onto public boolean com.ienai.controller.LoginController.checkInvcode(java.lang.String) throws java.lang.Exception
+2018-10-10 16:00:15.876  INFO 7472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login/login]}" onto public java.lang.String com.ienai.controller.LoginController.login(java.lang.String,java.lang.String) throws java.lang.Exception
+2018-10-10 16:00:15.876  INFO 7472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login/insertUserInfo],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.ienai.controller.LoginController.insertUserInfo(com.ienai.po.User) throws java.lang.Exception
+2018-10-10 16:00:15.878  INFO 7472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnPageInLikeOrder],methods=[GET]}" onto public java.util.List<com.ienai.dto.GenNote> com.ienai.controller.NoteController.returnPageInLikeOrder(java.lang.Integer) throws java.lang.Exception
+2018-10-10 16:00:15.878  INFO 7472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnUserAndNote],methods=[GET]}" onto public com.ienai.dto.IndexInfo com.ienai.controller.NoteController.returnUserAndNote() throws java.lang.Exception
+2018-10-10 16:00:15.879  INFO 7472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnPageSendMeInTimeOrder],methods=[GET]}" onto public java.util.List<com.ienai.dto.GenNote> com.ienai.controller.NoteController.returnPageSendMeInTimeOrder(java.lang.Integer) throws java.lang.Exception
+2018-10-10 16:00:15.879  INFO 7472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnUserLikeAndInterest],methods=[POST]}" onto public java.util.List<com.ienai.dto.NoteMetaRecord> com.ienai.controller.NoteController.returnUserLikeAndInterest(int[]) throws java.lang.Exception
+2018-10-10 16:00:15.879  INFO 7472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnPageInTimeOrder],methods=[GET]}" onto public java.util.List<com.ienai.dto.GenNote> com.ienai.controller.NoteController.returnPageInTimeOrder(java.lang.Integer) throws java.lang.Exception
+2018-10-10 16:00:15.879  INFO 7472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/returnPageFromMeInTimeOrder],methods=[GET]}" onto public java.util.List<com.ienai.dto.GenNote> com.ienai.controller.NoteController.returnPageFromMeInTimeOrder(java.lang.Integer) throws java.lang.Exception
+2018-10-10 16:00:15.880  INFO 7472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/careNote],methods=[POST]}" onto public boolean com.ienai.controller.NoteController.careNote(java.lang.Integer,boolean) throws java.lang.Exception
+2018-10-10 16:00:15.881  INFO 7472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/note/likeNote],methods=[POST]}" onto public boolean com.ienai.controller.NoteController.likeNote(java.lang.Integer,boolean) throws java.lang.Exception
+2018-10-10 16:00:15.882  INFO 7472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/hello]}" onto public java.lang.String com.ienai.controller.TestController.index()
+2018-10-10 16:00:15.883  INFO 7472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-10 16:00:15.884  INFO 7472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-10 16:00:15.912  INFO 7472 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-10 16:00:15.912  INFO 7472 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-10 16:00:15.939  INFO 7472 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-10 16:00:16.496  INFO 7472 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-10-10 16:00:16.541  INFO 7472 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-10 16:00:16.656  INFO 7472 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-10-10 16:00:16.661  INFO 7472 --- [restartedMain] com.ienai.IenaiApplication               : Started IenaiApplication in 3.611 seconds (JVM running for 4.797)
+2018-10-10 16:00:22.145  INFO 7472 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-10 16:00:22.146  INFO 7472 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-10 16:00:22.172  INFO 7472 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2018-10-10 16:00:22.194  INFO 7472 --- [http-nio-8080-exec-1] com.ienai.controller.BaseController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：无
+时间：2018-10-10 16:00:22
+行为：访问登陆页面
+-------------------------------
+2018-10-10 16:00:29.115  INFO 7472 --- [http-nio-8080-exec-8] com.ienai.controller.LoginController     : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:00:29
+行为：普通用户授权通过，访问主页
+-------------------------------
+2018-10-10 16:00:29.129  INFO 7472 --- [http-nio-8080-exec-9] com.ienai.interceptor.LoginInterceptor   : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:00:29
+行为：将要访问主页
+-------------------------------
+2018-10-10 16:00:29.264  INFO 7472 --- [http-nio-8080-exec-4] com.ienai.interceptor.LoginInterceptor   : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:00:29
+行为：将要访问主页
+-------------------------------
+2018-10-10 16:00:29.264  INFO 7472 --- [http-nio-8080-exec-4] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:00:29
+行为：请求查询主页所需的user和note信息
+-------------------------------
+2018-10-10 16:00:29.301  INFO 7472 --- [http-nio-8080-exec-4] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:00:29
+行为：查询完毕，开始做note的修正
+-------------------------------
+2018-10-10 16:00:29.336  INFO 7472 --- [http-nio-8080-exec-4] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:00:29
+行为：即将查询并设置id为3用户的信息
+-------------------------------
+2018-10-10 16:00:29.425  INFO 7472 --- [http-nio-8080-exec-8] com.ienai.interceptor.LoginInterceptor   : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:00:29
+行为：将要访问主页
+-------------------------------
+2018-10-10 16:00:29.427  INFO 7472 --- [http-nio-8080-exec-8] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:00:29
+行为：将要查询用户对一系列note的点赞和关心数据
+-------------------------------
+2018-10-10 16:01:30.047  INFO 7472 --- [http-nio-8080-exec-2] com.ienai.interceptor.LoginInterceptor   : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:01:30
+行为：将要访问主页
+-------------------------------
+2018-10-10 16:01:30.222  INFO 7472 --- [http-nio-8080-exec-10] com.ienai.interceptor.LoginInterceptor   : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:01:30
+行为：将要访问主页
+-------------------------------
+2018-10-10 16:01:30.223  INFO 7472 --- [http-nio-8080-exec-10] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:01:30
+行为：请求查询主页所需的user和note信息
+-------------------------------
+2018-10-10 16:01:30.230  INFO 7472 --- [http-nio-8080-exec-10] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:01:30
+行为：查询完毕，开始做note的修正
+-------------------------------
+2018-10-10 16:01:30.259  INFO 7472 --- [http-nio-8080-exec-10] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:01:30
+行为：即将查询并设置id为3用户的信息
+-------------------------------
+2018-10-10 16:01:30.274  INFO 7472 --- [http-nio-8080-exec-2] com.ienai.interceptor.LoginInterceptor   : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:01:30
+行为：将要访问主页
+-------------------------------
+2018-10-10 16:01:30.275  INFO 7472 --- [http-nio-8080-exec-2] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:01:30
+行为：将要查询用户对一系列note的点赞和关心数据
+-------------------------------
+2018-10-10 16:03:04.016  INFO 7472 --- [http-nio-8080-exec-9] com.ienai.interceptor.LoginInterceptor   : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:03:04
+行为：将要访问主页
+-------------------------------
+2018-10-10 16:03:04.223  INFO 7472 --- [http-nio-8080-exec-2] com.ienai.interceptor.LoginInterceptor   : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:03:04
+行为：将要访问主页
+-------------------------------
+2018-10-10 16:03:04.223  INFO 7472 --- [http-nio-8080-exec-2] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:03:04
+行为：请求查询主页所需的user和note信息
+-------------------------------
+2018-10-10 16:03:04.228  INFO 7472 --- [http-nio-8080-exec-2] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:03:04
+行为：查询完毕，开始做note的修正
+-------------------------------
+2018-10-10 16:03:04.245  INFO 7472 --- [http-nio-8080-exec-2] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:03:04
+行为：即将查询并设置id为3用户的信息
+-------------------------------
+2018-10-10 16:03:04.289  INFO 7472 --- [http-nio-8080-exec-9] com.ienai.interceptor.LoginInterceptor   : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:03:04
+行为：将要访问主页
+-------------------------------
+2018-10-10 16:03:04.290  INFO 7472 --- [http-nio-8080-exec-9] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:03:04
+行为：将要查询用户对一系列note的点赞和关心数据
+-------------------------------
+2018-10-10 16:03:07.212  INFO 7472 --- [http-nio-8080-exec-7] com.ienai.interceptor.LoginInterceptor   : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:03:07
+行为：将要访问主页
+-------------------------------
+2018-10-10 16:03:07.407  INFO 7472 --- [http-nio-8080-exec-2] com.ienai.interceptor.LoginInterceptor   : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:03:07
+行为：将要访问主页
+-------------------------------
+2018-10-10 16:03:07.407  INFO 7472 --- [http-nio-8080-exec-2] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:03:07
+行为：请求查询主页所需的user和note信息
+-------------------------------
+2018-10-10 16:03:07.412  INFO 7472 --- [http-nio-8080-exec-2] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:03:07
+行为：查询完毕，开始做note的修正
+-------------------------------
+2018-10-10 16:03:07.429  INFO 7472 --- [http-nio-8080-exec-2] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:03:07
+行为：即将查询并设置id为3用户的信息
+-------------------------------
+2018-10-10 16:03:07.466  INFO 7472 --- [http-nio-8080-exec-9] com.ienai.interceptor.LoginInterceptor   : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:03:07
+行为：将要访问主页
+-------------------------------
+2018-10-10 16:03:07.467  INFO 7472 --- [http-nio-8080-exec-9] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:03:07
+行为：将要查询用户对一系列note的点赞和关心数据
+-------------------------------
+2018-10-10 16:05:35.258  INFO 7472 --- [http-nio-8080-exec-8] com.ienai.interceptor.LoginInterceptor   : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:05:35
+行为：将要访问主页
+-------------------------------
+2018-10-10 16:05:35.406  INFO 7472 --- [http-nio-8080-exec-2] com.ienai.interceptor.LoginInterceptor   : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:05:35
+行为：将要访问主页
+-------------------------------
+2018-10-10 16:05:35.406  INFO 7472 --- [http-nio-8080-exec-2] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:05:35
+行为：请求查询主页所需的user和note信息
+-------------------------------
+2018-10-10 16:05:35.412  INFO 7472 --- [http-nio-8080-exec-2] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:05:35
+行为：查询完毕，开始做note的修正
+-------------------------------
+2018-10-10 16:05:35.426  INFO 7472 --- [http-nio-8080-exec-2] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:05:35
+行为：即将查询并设置id为3用户的信息
+-------------------------------
+2018-10-10 16:05:35.446  INFO 7472 --- [http-nio-8080-exec-7] com.ienai.interceptor.LoginInterceptor   : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:05:35
+行为：将要访问主页
+-------------------------------
+2018-10-10 16:05:35.447  INFO 7472 --- [http-nio-8080-exec-7] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:05:35
+行为：将要查询用户对一系列note的点赞和关心数据
+-------------------------------
+2018-10-10 16:06:25.023  INFO 7472 --- [http-nio-8080-exec-5] com.ienai.interceptor.LoginInterceptor   : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:06:25
+行为：将要访问主页
+-------------------------------
+2018-10-10 16:06:25.195  INFO 7472 --- [http-nio-8080-exec-8] com.ienai.interceptor.LoginInterceptor   : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:06:25
+行为：将要访问主页
+-------------------------------
+2018-10-10 16:06:25.195  INFO 7472 --- [http-nio-8080-exec-8] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:06:25
+行为：请求查询主页所需的user和note信息
+-------------------------------
+2018-10-10 16:06:25.198  INFO 7472 --- [http-nio-8080-exec-8] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:06:25
+行为：查询完毕，开始做note的修正
+-------------------------------
+2018-10-10 16:06:25.213  INFO 7472 --- [http-nio-8080-exec-8] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:06:25
+行为：即将查询并设置id为3用户的信息
+-------------------------------
+2018-10-10 16:06:25.253  INFO 7472 --- [http-nio-8080-exec-10] com.ienai.interceptor.LoginInterceptor   : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:06:25
+行为：将要访问主页
+-------------------------------
+2018-10-10 16:06:25.253  INFO 7472 --- [http-nio-8080-exec-10] com.ienai.controller.NoteController      : 
+-------------------------------
+ip：0:0:0:0:0:0:0:1
+用户名：testUser5
+时间：2018-10-10 16:06:25
+行为：将要查询用户对一系列note的点赞和关心数据
+-------------------------------
+2018-10-10 16:21:21.202  INFO 7472 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-10-10 16:21:21.202  INFO 7472 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e688f80: startup date [Wed Oct 10 16:00:13 GMT+08:00 2018]; root of context hierarchy
+2018-10-10 16:21:21.206  INFO 7472 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
